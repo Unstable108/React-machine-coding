@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.chips{
+  display: flex;
+  border-radius: 2%;
+}
+
+.chip{
+  padding: 5px;
+  margin: 5px;
+  background-color: gray;
+  border-radius: 5%;
+}
+.button{
+  color: red;
+}
