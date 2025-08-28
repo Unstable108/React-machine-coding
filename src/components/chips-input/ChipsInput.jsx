@@ -20,7 +20,7 @@ function ChipsInput() {
   }
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "40px 0" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: "20px 0" }}>
       <h2>Chips Input</h2>
       <input
         type="text"

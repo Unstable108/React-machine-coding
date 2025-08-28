@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { Accordion, ChipsInput } from "./components";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const items = [
+    {
+      title: "JavaScript Basics",
+      content: "Learn variables, functions, and loops in JavaScript.",
+    },
+    {
+      title: "React.js Overview",
+      content: "Understand components, state, and props in React.",
+    },
+    {
+      title: "Node.js",
+      content: "Basics of server-side development with Node.js.",
+    },
+    {
+      title: "Full-Stack Development",
+      content: "Build full-stack apps with React and Node.js.",
+    },
+  ];
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h2
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        1. Chips Input
+      </h2>
+      <ChipsInput />
+      <h2
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        2. Accordian single one time
+      </h2>
+
+      <Accordion items={items} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
