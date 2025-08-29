@@ -1,5 +1,5 @@
 import "./App.css";
-import { Accordion, ChipsInput } from "./components";
+import { Accordion, ChipsInput, TogglePassword } from "./components";
 
 function App() {
   const items = [
@@ -44,6 +44,7 @@ function App() {
       </h2>
 
       <Accordion items={items} />
+      <TogglePassword />
     </>
   );
 }
