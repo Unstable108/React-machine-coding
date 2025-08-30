@@ -1,5 +1,5 @@
 import "./App.css";
-import { Accordion, ChipsInput, TogglePassword } from "./components";
+import { Accordion, AutoComplete, ChipsInput, TogglePassword } from "./components";
 
 function App() {
   const items = [
@@ -23,6 +23,8 @@ function App() {
 
   return (
     <>
+     <h2>Auto Complete</h2>
+     <AutoComplete />
       <h2
         style={{
           display: "flex",
