@@ -9,18 +9,18 @@ function Accordion({ items }) {
     }
     return (!items || (items.length === 0)) ? "No items available"
         : (
-            <div class='accordion'>
+            <div className='accordion'>
                 {items.map((item, index) => {
-                    return <div key={index} class='accordion-item'>
+                    return <div key={index} className='accordion-item'>
                         <button
-                            class='accordion-title'
+                            className='accordion-title'
                             onClick={() => { handleClick(index) }}
                         >{item.title}
 
                             {index === openIndex ? <FaChevronDown />
                                 : <FaChevronUp />}
                         </button>
-                        {openIndex === index && <div class='accordion-content'>{item.content}</div>}
+                        {openIndex === index && <div className='accordion-content'>{item.content}</div>}
                     </div>
                 }
                 )}

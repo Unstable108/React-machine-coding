@@ -23,7 +23,6 @@ function App() {
 
   return (
     <>
-     <h2>Auto Complete</h2>
      <AutoComplete />
       <h2
         style={{

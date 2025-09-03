@@ -30,8 +30,8 @@ function ChipsInput() {
         placeholder="Type a chip and press tag"
         style={{ padding: "8px", width: "200px" }}
       />
-      <div class="chips">
-        {chips.map((chip,index) => <div class='chip'>{chip} <button onClick={()=>handleDeleteChip(index)} class='button'>X</button> </div>)}
+      <div className="chips">
+        {chips.map((chip,index) => <div classNameName='chip' key={1}>{chip} <button onClick={()=>handleDeleteChip(index)} className='button'>X</button> </div>)}
       </div>
     </div>
   );
