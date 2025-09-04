@@ -12,7 +12,7 @@
     border: 1px solid black;
     padding: 5px;
     text-align: left;
-    height: 500px;
+    max-height: 500px;
     overflow-y: scroll;
 }
 .result{

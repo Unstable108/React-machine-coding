@@ -23,6 +23,8 @@ const AutoComplete = () => {
     fetchData();
   },[input])
 
+  const [resultHidden,setResultHidden]=useState(false);
+
   return (
     <div className="full-component">
       <h1>Autocomplete Search Bar</h1>
